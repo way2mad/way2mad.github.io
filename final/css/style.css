@@ -613,7 +613,6 @@ a{
     }
 
     label{
-        border:1px solid red;
         display: block;
         position: absolute;
         top: 0;
