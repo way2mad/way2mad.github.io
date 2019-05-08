@@ -110,6 +110,7 @@ a{
     color:#00e0d0;
 }
 
+
 .first-slider{
 
 }
@@ -599,12 +600,119 @@ a{
 }
 
 @media screen and (max-width: 510px){
+    .wrapper{
+        width: 100%;
+        position: relative;
+        color: white;
+        text-align: center;
+        height: 40px;
+    }
+
+    #check-menu{
+        display: none;
+    }
+
+    label{
+        border:1px solid red;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55px;
+        height: 100%;
+        cursor: pointer;
+        z-index: 2;
+        line-height: 40px;
+    }
+
+    .burger-line{
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        width: 35px;
+        height: 2px;
+        background-color: #fff;
+        transition: .5s all;
+    }
+
+    .second, .third{
+        top: 18px;
+    }
+
+    .fourth{
+        top: 28px;
+    }
+
+    .main-menu1{
+        display: block;
+        position: absolute;
+        width: 120px;
+        bottom: 0;
+        right: 0;
+        transform: translateY(100%);
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        transition: .5s all;
+    }
+
+   .main-menu1 a{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+       background: linear-gradient(to left, rgba(9, 5, 47, 0.99), rgba(49, 29, 94, 0.85));
+       color: white;
+       text-transform: uppercase;
+       font-size: 13px;
+       transition:color .5s;
+       font-weight: bold;
+    }
+   .main-menu1 a:first-child{
+       border: none;
+   }
+    .main-menu1 a:last-child{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+
+    .main-menu1 a:hover{
+        color:#00e0d0;
+    }
+
+    #check-menu:checked ~ .main-menu1{
+        max-height: 500px;
+        font-size: 16px;
+    }
+
+    #check-menu:checked ~ .first{
+        display: none;
+    }
+
+    #check-menu:checked ~ .second{
+        transform: rotate(45deg);
+    }
+
+    #check-menu:checked ~ .third{
+        transform: rotate(-45deg);
+    }
+
+    #check-menu:checked ~ .fourth{
+        display: none;
+    }
+
+
+
+
     .firstHeader{
-        flex-direction: column;
+        display: flex;
+        flex-direction:row;
     }
     .firstMenu__items{
         flex-direction: column;
         text-align: center;
+        display: none;
     }
     .firstMenu__item{
         padding-top:10px ;
@@ -662,6 +770,12 @@ a{
         text-align: center;
     }
 }
+@media screen and (min-width: 511px){
+    .wrapper{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 420px){
 
