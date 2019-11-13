@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.square__item{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.square{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.square__item-red{
+    background-color: red;
+    left: 20px;
+    position: absolute;
+    z-index: 1;
+}
+.square__item-green{
+    background-color: #66f620;
+    position: absolute;
+    left: 75%;
+    top: 10%;
+    z-index: 10;
+}
+.square__item-blue{
+    background-color: blue;
+    position: absolute;
+    top: 75%;
+    left: -5%;
+    z-index: 30;
+}
+.square__item-yellow{
+    background-color: yellow;
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    z-index: 50;
+}
+
+.square__circle{
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 20px;
+    position: relative;
+}
+
+.square__circle-cross::before, .square__circle-cross::after {
+    content: '';
+    display: block;
+    height: 7px;
+    bottom: 45px;
+    right: 10px;
+    background: black;
+    position: absolute;
+    width: 80%;
+}
+.square__circle-cross::after {
+    transform: rotate(90deg);
+}
+.square__circle-cross:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.square__item:hover{
+    z-index: 100;
+}
