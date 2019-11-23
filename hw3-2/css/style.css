@@ -23,50 +23,49 @@ button{
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .left {
     height: 610px;
     width: 465px;
     background-color: #37b0ae;
+    position: relative;
 }
 .right {
     height: 700px;
     width: 545px;
     background-color: white;
+    padding: 80px 0 0 80px;
 }
 
-.left__items{
-    position: relative;
-}
 .left__logo{
-    position: absolute;
-    top: 25px;
-    left: 25px;
+    /*!*position: absolute;*!*/
+    /*top: 25px;*/
+    /*left: 25px;*/
+    margin: 30px 0 0 25px;
 }
 
 .left__camera{
-    position: absolute;
-    top: 85px;
-    left: -40px;
-    z-index: 10;
+    z-index: 100;
+    margin: 40px 0 0 -45px ;
 }
 
 .left__shadow{
-    position: absolute ;
-    top: 270px;
+    z-index: 10;
+    position: absolute;
     left: -85px;
-    z-index: 1;
+    top: 260px;
 }
 
 
-.left__preview{
+.preview{
     position: absolute;
-    left: 415px;
+    left: 425px;
     top: 150px;
     z-index: 15;
 }
-.left__mini{
+.preview__mini{
     height: 95px;
     width: 95px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -75,21 +74,18 @@ button{
     margin-bottom: 13px;
     transition: box-shadow 1s;
 }
-.left__mini:last-child{
+.preview__mini:last-child{
     margin-bottom: 0;
 }
-.left__mini:hover{
+.preview__mini:hover{
     box-shadow:  0 0 2px rgba(0,0,0,0.5);
     transition: 1s;
 }
-.left__mini img{
+.preview__mini img{
     margin-top: 10px;
 }
 
 
-.right__items{
-    margin: 80px 0 0 90px;
-}
 .right__title{
     font-size: 34px;
     text-transform: uppercase;
@@ -101,7 +97,7 @@ button{
     color: #89949d;
 }
 
-.right_features{
+.features{
     margin-top: 35px;
 }
 
@@ -115,7 +111,7 @@ button{
 li{
     list-style-type: none;
 }
-.right_features li:before {
+.features li:before {
     color: #37b0ae; /* Цвет маркера */
     content: "■ "; /* Сам маркер */
     width: 2px;
@@ -128,7 +124,7 @@ li{
     line-height: 2;
 }
 
-.right__info{
+.info{
     margin-top: 55px;
     position: relative;
 }
@@ -148,23 +144,23 @@ li{
     top: 30px;
 }
 
-.right__counter{
+.counter{
     display: flex;
     margin-top: 115px ;
 }
-.right__count{
+.counter__right{
     width: 40px;
     height: 35px;
     border: 1px solid #3a4d5c;
     text-align: center;
 }
 
-.right__count:nth-child(2){
+.counter__right:nth-child(2){
     border-right: none ;
     border-left: none;
 }
 
-.right__price{
+.price{
     display: flex;
     align-items: flex-end;
     margin-top: 40px;
@@ -181,11 +177,11 @@ li{
     margin-bottom: 5px;
     margin-left: 20px;
 }
-.right__buttons{
+.buttons{
     margin-top: 40px;
 }
 
-.right__button{
+.buttons__right{
     height: 45px;
     width: 200px;
     background-color: #37b0ae;
@@ -193,7 +189,7 @@ li{
     color: white;
     transition: color 1s;
 }
-.right__button-wish{
+.buttons__right-wish{
     background-color: white;
     color: #89949d;
     border: 1px solid #89949d;
@@ -201,16 +197,75 @@ li{
     transition: color 1s;
 }
 
-.right__button:hover{
+.buttons__right:hover{
     background-color: white;
     color: #37b0ae;
     border: 1px solid #89949d;
     transition: 1s;
 }
-.right__button-wish:hover{
+.buttons__right-wish:hover{
     background-color: #37b0ae;
     font-size: 16px;
     color: white;
     border: none;
     transition: 1s;
+}
+
+@media screen and (max-width: 1020px) {
+    .left{
+        height: 620px;
+    }
+    .left__camera {
+        margin: 0 0 0 0 ;
+        width: 100%;
+    }
+    .left__shadow{
+        width: 100%;
+        margin-left: 85px;
+    }
+    .preview {
+        /*position: absolute;*/
+        display: flex;
+        /*left: 75px;*/
+        /*top: 510px;*/
+        /*z-index: 15;*/
+        flex-direction: row-reverse;
+        margin: auto;
+        position: absolute;
+        top: 510px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        justify-content: center;
+    }
+    .preview__mini{
+        margin: 7px;
+    }
+    .buttons__right{
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .right{
+        padding: 10px;
+    }
+    .preview {
+        /*position: absolute;*/
+        display: flex;
+        /*left: 75px;*/
+        /*top: 510px;*/
+        /*z-index: 15;*/
+        flex-direction: row-reverse;
+        margin: auto;
+        position: absolute;
+        top: 460px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        justify-content: center;
+    }
+    .left{
+        height: 570px;
+    }
 }
