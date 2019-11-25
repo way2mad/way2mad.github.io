@@ -13,23 +13,23 @@ button {
     border: 0;
 }
 
-
 .container{
     max-width: 1024px;
     margin: 0 auto;
     height: 100%;
 }
 
-.section-one{
+.one{
     background: url("../img/banner.png") no-repeat center / cover;
     height: 580px;
     margin-top: 20px;
+    width: 100%;
 }
 
-.overlay-white{
-     background-color: white;
-     height: 65px;
- }
+.overlay{
+    background-color: white;
+    height: 65px;
+}
 .header{
     width: 100%;
     margin: 0 auto;
@@ -39,22 +39,22 @@ button {
 
 }
 
-.logo{
+.header__logo{
     display: flex;
     vertical-align: center;
     margin-left: 30px;
 }
-.logo__text{
+.header__text{
     margin: auto 20px;
     font-size: 43px;
 }
-.logo__img{
+.header__img{
     height: 100%;
     width: 100%;
 }
 
 
-.menu__items{
+.menu{
     display: flex;
 }
 .menu__item{
@@ -62,20 +62,28 @@ button {
     font-size: 21px;
     color: #87888a;
 }
+.menu__mini{
+    display: none;
+}
+
 
 .top{
     display: flex;
     justify-content: space-between;
 }
 
+
+.top__phone{
+    width: 100%;
+}
 .top__left{
     margin:65px 0 0 65px ;
 }
-.top-title{
+.top__title{
     font-size: 42px;
     color: white;
 }
-.top-text{
+.top__text{
     font-size: 26px;
     color: white;
 }
@@ -93,7 +101,7 @@ button {
     width: 510px;
     padding-top: 170px;
 }
-.singUp{
+.sing{
     height: 45px;
     width: 170px;
     background-color: #5094f2;
@@ -103,32 +111,32 @@ button {
     display: flex;
 }
 
-.section-two{
+.two{
     height: 410px;
 }
 
-.prod_items{
+.prod{
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
-.prod__item{
+.prod__items{
     width: 260px;
     text-align: center;
 }
-.prod__item__title{
-    font-size: 20px;
+.prod__item{
+    font-size: 34px;
     color: #5094f2;
 }
-.prod__item__text{
-    font-size: 14px;
+.prod__text{
+    font-size: 20px;
     color: #87888a;
 }
 
-.section-three{
-    height: 400px  ;
+.three{
+    height: 100%;
 }
-.shopping__items{
+.shopping{
     display: flex;
 }
 .shopping__left img{
@@ -143,7 +151,7 @@ button {
     font-size: 26px;
     margin-top: 50px;
 }
-.shopping__right__text{
+.shopping__text{
     font-size: 16px;
     line-height: 240%;
     color: #87888a;
@@ -151,4 +159,123 @@ button {
 .copyright{
     text-align: center;
     color: #87888a;
+}
+
+
+@media screen and (max-width: 800px){
+    .one{
+        background: url("../img/banner.png") no-repeat center / cover;
+        height: 480px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .top__right{
+        width: 510px;
+        padding-top: 50px;
+    }
+
+}
+@media screen and (max-width: 700px){
+    .menu__item{
+        display: none;
+    }
+    .menu__mini{
+        display: flex;
+    }
+    .shopping{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .shopping__right{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .shopping__title{
+        text-align: center;
+    }
+    .shopping__title-small {
+        text-align: left;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+    .shopping__text{
+        margin: 0 auto;
+    }
+    .copyright{
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .one{
+        background: url("../img/banner.png") no-repeat center / cover;
+        height: 380px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .top__left{
+        margin:20px 0 0 10px ;
+    }
+    .top__title{
+        font-size: 30px;
+        color: white;
+    }
+    .top__text{
+        font-size: 22px;
+        color: white;
+    }
+    .top__phone{
+        min-width: 120px;
+    }
+    .two{
+        height: 100%;
+    }
+    .prod{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .prod__items{
+        display: flex;
+        padding: 20px 10px;
+        border-bottom: 1px solid grey;
+        width: 100%;
+    }
+    .prod__items img{
+        width: 130px;
+        margin: 5px;
+        height: 100%;
+    }
+
+    .prod__char{
+        margin: auto 0;
+    }
+
+    .prod__item{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .shopping__left img {
+        width: 200px;
+    }
+    .sing{
+        margin-left: 0px;
+        margin-top: 35px;
+        display: flex;
+    }
+    .top__title{
+        font-size: 24px;
+        color: white;
+    }
+    .top__text{
+        font-size: 16px;
+        color: white;
+    }
+
 }
