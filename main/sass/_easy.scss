@@ -1,0 +1,28 @@
+.easy{
+  text-align: center;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.card{
+  max-width: 350px;
+  text-align: center;
+  margin: 10px;
+}
+.card__title{
+  margin-top: 40px;
+  font-size: 20px;
+  color: #061e37;
+}
+.card__text{
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b0bec5;
+}
+
+.btn--green{
+  margin-top: 80px;
+  background: #1de9b6;
+}

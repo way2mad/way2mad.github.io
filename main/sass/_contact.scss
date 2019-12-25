@@ -1,0 +1,38 @@
+.contactForm{
+  max-width: 600px;
+  margin: 50px auto 100px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact{
+  background-color: #fafafa;
+}
+
+.contactForm__form{
+  height: 50px;
+  width: 280px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid  #061e37;
+  padding-left: 15px;
+}
+.contactForm__mes{
+  width: 560px;
+  border-radius: 5px;
+  border: 1px solid  #061e37;
+  padding: 20px;
+}
+
+
+.checkbox{
+  margin-top: 45px;
+  width: 12px;
+  height: 12px;
+}
+
+.btn--contact{
+  margin-top: 20px;
+  background: #1de9b6;
+}

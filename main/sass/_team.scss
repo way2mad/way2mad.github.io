@@ -1,0 +1,42 @@
+.team{
+  text-align: center;
+}
+.team__avatars{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.team__avatars img{
+  margin-right:50px;
+  border-radius: 50%;
+}
+.team__avatars img:last-child{
+  margin-right:0;
+}
+
+.team__avatars img:nth-child(2){
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.75);
+}
+
+.team__name{
+  color: #061e37;
+  font-size: 18px;
+  margin-top: 60px;
+}
+.team__info{
+  max-width: 650px;
+  margin: 15px auto 0 auto;
+  color: #b0bec5;
+  font-size: 15px;
+}
+.social{
+  margin: 55px 0 90px;
+}
+.social img{
+  margin-right: 35px;
+}
+.social :last-child{
+  margin-right: 0;
+}

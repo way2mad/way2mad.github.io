@@ -1,0 +1,79 @@
+.header{
+  background: url("../img/headerBg.png") no-repeat center/cover;
+  width: 100%;
+}
+.main-menu{
+  display: none;
+}
+#check-menuFooter{
+  display: none;
+}
+
+
+.navBar{
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu{
+  display: flex;
+}
+.menu__items{
+  margin-right: 50px;
+  font-size: 13px;
+  color: white;
+}
+.menu__items:last-child{
+   margin-right: 0;
+ }
+.singUp{
+  border: 1px solid white;
+  width: 80px;
+  height: 25px;
+  color: white;
+}
+
+.headerContent{
+  margin-top: 170px;
+  padding-bottom: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContent__left{
+  max-width: 580px;
+}
+
+.headerContent__left p{
+  color: white;
+}
+
+.buttons{
+  margin-top: 40px;
+
+}
+.btn--white{
+  color: #061e37;
+  background-color: white;
+  margin-left: 30px ;
+}
+.video{
+  background: url("../img/video.png") no-repeat center/cover;
+  border: 1px solid #061e37;
+  width: 600px;
+  height: 320px;
+  border-radius: 1%;
+
+}
+.video__overlay{
+  background: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+  border-radius: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
