@@ -1,0 +1,42 @@
+.counts{
+  display: flex;
+  margin: 100px 0 0 0;
+}
+
+.count{
+  width: 400px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.count:first-child{
+  width: 320px;
+}
+.count:last-child{
+  width: 320px;
+}
+.count:nth-child(1){
+  background: #80d8ff;
+}
+.count:nth-child(2){
+  background: #82b1ff;
+}
+.count:nth-child(3){
+  background: #b388ff;
+}
+.count:nth-child(4){
+  background: #ea80fc;
+}
+
+.count img{
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+}
+
+.count__text{
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
