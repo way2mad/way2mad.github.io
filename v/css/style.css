@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+ul{
+    list-style-type: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 1229px;
+    margin: 0 auto;
+}
+
+
+.main{
+    background: url("../img/jake-main.png") no-repeat center/cover;
+    width: 100%;
+}
+.navBar{
+   padding-top: 47px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo__text{
+    text-transform: uppercase;
+    color: #3E3D3D;
+    font: 24px/28px Roboto;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 605px;
+    align-items: center;
+}
+.menu__items{
+    font: 18px/24px Open-Sans;
+    font-weight: 400;
+    color: #3E3D3D;
+}
+
+
+.lang{
+    display: flex;
+    align-items: center;
+}
+.lang__name{
+    font: 18px/24px Open-Sans;
+    font-weight: 400;
+    color: #3E3D3D;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.search{
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 180px;
+    height: 37px;
+    margin-left: 20px;
+    background: url("../img/bg-search.png") repeat;
+    padding-left: 20px;
+    font: 18px/24px Open-Sans;
+    font-weight: 400;
+    color: white;
+    user-input: white;
+}
+.search::placeholder{
+    color: white;
+}
+
+.header__text{
+    margin-top: 376px;
+    width: 944px;
+}
+.header__title{
+    font: 64px/80px Merriweather;
+    letter-spacing: -0.015em;
+    color: white;
+}
+.header__subtitle{
+    font: 24px/33px Open-Sans;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.015em;
+    color: #E5E5E5;
+    margin-top: 28px;
+    width: 580px;
+}
+
+.btn{
+    font: 18px/25px Open-Sans;
+    width: 189px;
+    font-weight: bold;
+    height: 62px;
+    background: #ED3744;
+    border-radius: 5px;
+    color: white;
+    margin: 60px 0 272px 0;
+}
+
+.btn--white{
+    background: none;
+    border: 3px solid white;
+    margin-left: 30px;
+}
